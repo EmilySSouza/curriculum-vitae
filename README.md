@@ -11,9 +11,6 @@ Ele também pode ser utilizado como currículo ‘vitae’ e portfolio pessoal.
 
 https://github.com/digitalinnovationone/cv
 
-**Dúvidas:**
-https://github.com/digitalinnovationone/cv/issues
-
 **Referências:**
 
 W3C: https://www.w3schools.com/howto/howto_website_create_resume.asp
