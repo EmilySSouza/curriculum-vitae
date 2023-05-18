@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- @falvojr: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
 <!-- @falvojr: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 
 <head>
   <title>Emily Souza da Silva</title>
@@ -12,20 +12,22 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+  <script src="Assets/Js/script.js"></script>
 
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif
+  <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
     }
-  </style>
 
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+  </script>
 </head>
 
 <body class="w3-light-grey" cz-shortcut-listen="true">
@@ -45,44 +47,44 @@
             <h2>Emily Souza da Silva</h2>
           </div>
           <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Analista de Desenvolvimento
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Analista de Desenvolvimento
               Junior</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Salvador BA, Brasil</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>emilyssouza05@gmail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(71) 985108216</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Salvador BA, Brasil</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>emilyssouza05@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>(71) 985108216</p>
             <hr>
 
             <p class="w3-large">
-              <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
+              <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b>
             </p>
             <p>JavaScript</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:30%">30%</div>
             </div>
             <p>HTML</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
             </div>
             <p>CSS</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
             </div>
             <br>
 
             <p class="w3-large w3-text-theme">
-              <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b>
+              <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-black"></i>Idiomas</b>
             </p>
             <p>Português</p>
             <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+              <div class="w3-round-xlarge w3-black" style="height:24px;width:100%"></div>
             </div>
             <p>Inglês</p>
             <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:15%"></div>
+              <div class="w3-round-xlarge w3-black" style="height:24px;width:15%"></div>
             </div>
             <p>Espanhol</p>
             <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:10%"></div>
+              <div class="w3-round-xlarge w3-black" style="height:24px;width:10%"></div>
             </div>
             <br>
           </div>
@@ -96,7 +98,8 @@
 
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sobre</h2>
+              class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Sobre</h2>
+              <input type="checkbox" name="toggle-dark" id="toggle-dark">
           <p>Me chamo Emily Souza, mas pode me chamar de Mend. Atualmente trabalho como Analista de Desenvolvimento
             Junior na Ecglobal, onde programo utilizando o Confirmit e também um pouco de JavaScript. Venho dedicando o
             tempo livre para estudar Front-End, que desde que comecei a estudar programação acabei me apaixonando,
@@ -105,13 +108,13 @@
 
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiências
+            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Experiências
           </h2>
           <div class="w3-container">
             <h5 class="w3-opacity"><b>
                 Ecglobal for Business</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Julho 2021 - <span
-                class="w3-tag w3-teal w3-round">Atual</span></h6>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Julho 2021 - <span
+                class="w3-tag w3-black w3-round">Atual</span></h6>
             <p>
               <ul>
                 <li>Programo questionários de pesquisas e implantação de sistemas em JavaScript, utilizando a plataforma
@@ -133,23 +136,23 @@
 
         <div class="w3-container w3-card w3-white">
           <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação
+            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Educação
           </h2>
           <div class="w3-container">
             <h5 class="w3-opacity"><b>Descomplica</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Abril de 2022 - <span
-                class="w3-tag w3-teal w3-round">Atual</span></h6>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Abril de 2022 - <span
+                class="w3-tag w3-black w3-round">Atual</span></h6>
             <ul>
-              <li><a href="Assets/ArquiteturaEOrganizaçãoDeComputadores..pdf">Arquitetura E Organização De Computadores</a></li>
-              <li><a href="Assets/ProgrammingBasics.pdf">Programming Basics</a></li>
-              <li><a href="Assets/DBDeveloper.pdf">DB Developer</a></li>
+              <li><a href="Assets/Curriculos/DBDeveloper.pdf">DB Developer</a></li>
+              <li><a href="Assets/Curriculos/ProgrammingBasics.pdf">Programming Basics</a></li>
+              <li><a href="Assets/Curriculos/ArquiteturaEOrganizaçãoDeComputadores..pdf">Arquitetura E Organização De Computadores</a></li>
             </ul>
             <hr>
           </div>
           <div class="w3-container">
             <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto de 2022 - <span
-                class="w3-tag w3-teal w3-round">Atual</span></h6>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto de 2022 - <span
+                class="w3-tag w3-black w3-round">Atual</span></h6>
             <ul>
               <li><a href="https://www.dio.me/certificate/7A51B1D8">Primeiros Passos Com JavaScript</a></li>
               <li><a href="https://www.dio.me/certificate/98838D36" target="_blank">Conhecendo Funções JavaScript</a>
@@ -173,27 +176,27 @@
           </div>
           <div class="w3-container">
             <h5 class="w3-opacity"><b>Escola de Medicina E Saúde Pública</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Outubro 2020 - Novembro 2020
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Outubro 2020 - Novembro 2020
             </h6>
             <ul>
-              <li><a href="Assets/ProAprendiz.pdf">Projeto Pró - Aprendiz</a></li>
+              <li><a href="Assets/Curriculos/ProAprendiz.pdf">Projeto Pró - Aprendiz</a></li>
             </ul>
           </div>
           <div class="w3-container">
             <h5 class="w3-opacity"><b>Cisco</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Outubro 2020 - Dezembro 2020
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Outubro 2020 - Dezembro 2020
             </h6>
             <ul>
-              <li><a href="Assets/ITEssentialsPC.pdf">IT Essentials</a></li>
+              <li><a href="Assets/Curriculos/ITEssentialsPC.pdf">IT Essentials</a></li>
             </ul>
           </div>
 
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos
+              <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Projetos
             </h2>
             <div class="w3-container">
-              <h6 class="w3-text-teal">
+              <h6 class="w3-text-black">
                 <i class="fa fa-github fa-fw w3-margin-right"></i>
                 <a href="https://github.com/EmilySSouza/js-developer-pokedex" target="_blank">EmilySSouza/js-developer-pokedex</a>
               </h6>
@@ -201,7 +204,7 @@
               <hr>
             </div>
             <div class="w3-container">
-              <h6 class="w3-text-teal">
+              <h6 class="w3-text-black">
                 <i class="fa fa-github fa-fw w3-margin-right"></i>
                 <a href="https://github.com/EmilySSouza/NLW-Esports-Explorer" target="_blank">EmilySSouza/NLW-Esports-Explorer</a>
               </h6>
@@ -219,7 +222,7 @@
       <!-- End Page Container -->
     </div>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <footer class="w3-container w3-black w3-center w3-margin-top">
       <p>Minhas Redes Sociais</p>
       <a href="https://github.com/EmilySSouza" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
       <a href="www.linkedin.com/in/emily-ssouza" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
