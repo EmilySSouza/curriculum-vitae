@@ -18,8 +18,7 @@ h6 {
     color: var(--color-body);
 }
 
-html,
-w3 {
+html, .w3 {
     --background-body: white;
     --color-body: black;
 }
