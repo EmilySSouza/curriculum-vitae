@@ -71,7 +71,7 @@ input:checked + label:after {
 	background: linear-gradient(180deg,#777,#3a3a3a);
 }
 label:active:after{
-	width: 260px;
+	width: 45px;
 }
 .background {
 	width:100vw;
