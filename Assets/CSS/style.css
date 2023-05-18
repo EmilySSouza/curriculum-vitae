@@ -19,7 +19,7 @@ html {
 }
 
 html[data-theme="dark"] {
-    --background-body: 121212;
+    --background-body: #121212;
     --color-body: lightgray;
 }
 
