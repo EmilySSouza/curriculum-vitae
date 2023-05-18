@@ -18,14 +18,14 @@ h6 {
     color: var(--color-body);
 }
 
-html {
-    --background-body: lightgray;
+html, w3 {
+    --background-body: white;
     --color-body: gray;
 }
 
-html[data-theme="dark"] {
+html[data-theme="dark"], .w3[data-theme="dark"]{
     --background-body: #121212;
-    --color-body: lightgray;
+    --color-body: white;
 }
 
 body {
