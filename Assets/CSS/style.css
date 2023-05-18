@@ -13,6 +13,11 @@ h6 {
   font-family: "Roboto", sans-serif
 }
 
+.w3-container {
+    background-color: var(--background-body);
+    color: var(--color-body);
+}
+
 html {
     --background-body: lightgray;
     --color-body: gray;
